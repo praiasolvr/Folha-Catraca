@@ -8,33 +8,73 @@
 .campoDate {
   display: flex;
   flex-direction: column;
-  
 }
 
-.conteiner-folha-catraca{
-  background-color: #f1f1f1;
+.conteiner-folha-catraca {
+  background-color: #fdfdfd;
+  color: black;
   padding: 5px 20px;
   border-radius: 8px;
 }
-form{
+
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-form input{
+
+form input {
   max-width: 200px;
   margin: 5px 0px;
   padding: 4px 4px;
-
 }
-form button{
+
+form button {
   background-color: black;
   color: white;
   transition: 1s;
   margin: 10px 0%;
-  
 }
-form button:hover{
+
+form button:hover {
   background-color: red;
   color: black;
+}
+
+.conteiner-viagem-fechada {
+  border: black 1px solid;
+  padding: 8px 23px;
+  margin-top: 4px;
+}
+
+.conteiner-viagem-fechada p {
+  margin: 0px 0px;
+}
+
+.conteiner-viagem-fechada p strong {
+  color: red;
+}
+
+.conteiner-resp-viagem-fechada {
+  display: flex;
+  justify-content: space-between;
+}
+
+.conteiner-eu-fechei {
+  border: black 1px solid;
+  padding: 8px 21px;
+  margin-top: 10px;
+}
+
+.conteiner-eu-fechei p {
+  margin: 0px 0px;
+}
+
+.conteiner-resp-eu-fechei {
+  display: flex;
+  justify-content: space-between;
+}
+
+.conteiner-eu-fechei p strong {
+  color: red;
 }

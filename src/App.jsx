@@ -44,7 +44,42 @@ function App() {
           placeholder='Catraca tacom'
           value={catracaTacom}
           onChange={(e) => { setCatracaTacom(e.target.value) }} />
-        
+
+
+        <div className='conteiner-viagem-fechada'>
+          <p><strong>* </strong>Viagem fechada?</p>
+          <div className='conteiner-resp-viagem-fechada'>
+            <div>
+              <input type="radio" id="SIM-fechada" name="fechada" value="SIM-fechada" />
+              <label for="SIM-fechada">SIM</label>
+            </div>
+
+            <div>
+              <input type="radio" id="NAO-fechada" name="fechada" value="NAO-fechada" />
+              <label for="NAO-fechada">NÃO</label>
+            </div>
+          </div>
+        </div>
+
+
+        <div className='conteiner-eu-fechei'>
+          <p><strong>* </strong>Foi eu que fechei?</p>
+          <div className='conteiner-resp-eu-fechei'>
+            <div>
+              <input type="radio" id="SIM-fechei" name="fechei" value="SIM-fechei" />
+              <label for="SIM-fechei">SIM</label>
+            </div>
+
+            <div>
+              <input type="radio" id="NAO-fechei" name="fechei" value="NAO-fechei" />
+              <label for="NAO-fechei">NÃO</label>
+            </div>
+          </div>
+        </div>
+
+
+
+
         <button type='submit'>
           Registrar
         </button>
