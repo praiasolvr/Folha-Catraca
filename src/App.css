@@ -62,7 +62,7 @@ form button:hover {
 
 .conteiner-eu-fechei {
   border: black 1px solid;
-  padding: 8px 21px;
+  padding: 8px 19px;
   margin-top: 10px;
 }
 
@@ -77,4 +77,30 @@ form button:hover {
 
 .conteiner-eu-fechei p strong {
   color: red;
+}
+
+.controladores-veiculos {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.controladores-veiculos .veiculos-vistoriados svg {
+  margin-right: 8px;
+  color: green;
+  width: 20px;
+  height: 20px;
+}
+
+.controladores-veiculos .veiculos-pensentes svg {
+  margin-right: 8px;
+  color: red;
+  width: 20px;
+  height: 20px;
+}
+
+.controladores-veiculos button {
+  display: flex;
+  align-items: center;
 }
