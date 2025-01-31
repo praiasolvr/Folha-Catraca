@@ -14,30 +14,26 @@ export default function Frotas() {
             <h1>
                 Veiculos
             </h1>
-
-            {frotas.map((veiculo) => {
-                function verificarStatus(veiculoStatus) {
-                    if (veiculoStatus == "pendente") {
-                        return <div className="pendente">
-                            <FaBus />
-
-                        </div>
-                    } else {
-                        return <div className="verificado">
-                            <FaBus />
-
-                        </div>
+            <div className="lista-veiculos">
+                {frotas.map((veiculo) => {
+                    function verificarStatus(veiculoStatus) {
+                        if (veiculoStatus == "pendente") {
+                            return <div className="pendente">
+                                <FaBus />
+                            </div>
+                        } else {
+                            return <div className="verificado">
+                                <FaBus />
+                            </div>
+                        }
                     }
-
-                }
-                return <button>
-                    {verificarStatus(veiculo.status)}
-
-                    veiculo: {veiculo.numVeiculo}
-                    status: {veiculo.status}
-                </button>
-            })}
-
+                    return <button>
+                        {verificarStatus(veiculo.status)}
+                        veiculo: {veiculo.numVeiculo}
+                        status: {veiculo.status}
+                    </button>
+                })}
+            </div>
         </>
     )
 }

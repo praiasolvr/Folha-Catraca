@@ -24,7 +24,7 @@ export default function Vistoriar() {
     // =========MINHAS FUNÇÕES========= //
     return (
         <div className='conteiner-folha-catraca'>
-            <div className='controladores-veiculos'>
+            {/* <div className='controladores-veiculos'>
 
                 <button className='veiculos-vistoriados' onClick={() => { alert('ola') }}>
                     <FaBus />
@@ -35,7 +35,7 @@ export default function Vistoriar() {
                     <FaBus />
                     Viculos pendentes
                 </button>
-            </div>
+            </div> */}
 
             <h1>Folha de catraca</h1>
             <div className="campoDate">
@@ -43,12 +43,13 @@ export default function Vistoriar() {
 
             </div>
             <form onSubmit={RegistrarCatraca}>
-                <input
+                {/* <input
                     required
                     type="number"
                     placeholder='Numero veiculo'
                     value={veiculo}
-                    onChange={(e) => { setVeiculo(e.target.value) }} />
+                    onChange={(e) => { setVeiculo(e.target.value) }} /> */}
+                <h2> Veículo: 12111 </h2>
 
                 <input
                     required

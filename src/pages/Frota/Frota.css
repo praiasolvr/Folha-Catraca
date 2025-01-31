@@ -1,6 +1,13 @@
-.pendente svg{
+.pendente svg {
     color: red;
 }
-.verificado svg{
+
+.verificado svg {
     color: green;
+}
+
+.lista-veiculos {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
 }
