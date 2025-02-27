@@ -15,7 +15,5 @@ export default function AppRoutes() {
 
             </Routes>
         </BrowserRouter>
-
-
     )
 }
