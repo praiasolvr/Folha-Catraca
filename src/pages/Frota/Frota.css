@@ -7,7 +7,17 @@
 }
 
 .lista-veiculos {
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     flex-direction: column;
+}
+
+.container-pesquisa input{
+    background-color: aliceblue;
+    color: black;
+    width: 250px;
+    height: 1.3rem;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    padding: 4px;
 }

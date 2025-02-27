@@ -6,20 +6,20 @@ export default function Vistoriar() {
     const [veiculo, setVeiculo] = useState()
     const [catracaFisica, setCatracaFisica] = useState()
     const [catracaTacom, setCatracaTacom] = useState()
-
-
+    // TODO: CRIAR AS VARIAVEIS AQUI... 
     // =========MINHAS VARIAVEIS========= //
 
 
-
     // =========MINHAS FUNÇÕES========= //
-
     function RegistrarCatraca(e) {
         e.preventDefault()
         alert("pg")
     }
-
+    // TODO: DESENVOLVER AS FUNÇÕES AQUI...
     // =========MINHAS FUNÇÕES========= //
+
+
+    // =========RETORNO DA PAGINA ========= //
     return (
         <div className='conteiner-folha-catraca'>
             {/* <div className='controladores-veiculos'>
@@ -55,7 +55,6 @@ export default function Vistoriar() {
                     placeholder='Catrca fisica'
                     value={catracaFisica}
                     onChange={(e) => { setCatracaFisica(e.target.value) }} />
-
                 <input
                     required
                     type="number"
@@ -71,14 +70,12 @@ export default function Vistoriar() {
                             <input type="radio" id="SIM-fechada" name="fechada" value="SIM-fechada" required />
                             <label for="SIM-fechada">SIM</label>
                         </div>
-
                         <div>
                             <input type="radio" id="NAO-fechada" name="fechada" value="NAO-fechada" required />
                             <label for="NAO-fechada">NÃO</label>
                         </div>
                     </div>
                 </div>
-
 
                 <div className='conteiner-eu-fechei'>
                     <p><strong>* </strong>Foi eu que fechei?</p>
@@ -95,12 +92,10 @@ export default function Vistoriar() {
                     </div>
                 </div>
 
-
-
-
                 <button type='submit'>
                     Registrar
                 </button>
             </form>
         </div>)
+    // =========RETORNO DA PAGINA ========= //
 }
