@@ -12,6 +12,7 @@ export default function AppRoutes() {
                 <Route path="/menu" element={<Menu />} />
                 <Route path="/frotas" element={<Frotas />} />
                 <Route path="/vistoriar" element={<Vistoriar />} />
+                <Route path="/vistoriar/:id" element={<Vistoriar />} />
 
             </Routes>
         </BrowserRouter>

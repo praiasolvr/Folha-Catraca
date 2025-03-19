@@ -1,16 +1,24 @@
 import { FaBus } from "react-icons/fa6";
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 
 export default function Vistoriar() {
     // =========MINHAS VARIAVEIS========= //
     const [veiculo, setVeiculo] = useState()
     const [catracaFisica, setCatracaFisica] = useState()
     const [catracaTacom, setCatracaTacom] = useState()
+    const { id } = useParams();
+    const [data, setData] = useState()
     // TODO: CRIAR AS VARIAVEIS AQUI... 
     // =========MINHAS VARIAVEIS========= //
 
 
     // =========MINHAS FUNÇÕES========= //
+    useEffect(() => {
+        setVeiculo(id)
+    }, [])
+
+
     function RegistrarCatraca(e) {
         e.preventDefault()
         alert("pg")
@@ -37,7 +45,7 @@ export default function Vistoriar() {
 
             <h1>Folha de catraca</h1>
             <div className="campoDate">
-                <h2>Data:10/01/2025 </h2>
+                <h2>Data: {data} </h2>
 
             </div>
             <form onSubmit={RegistrarCatraca}>
@@ -47,8 +55,7 @@ export default function Vistoriar() {
                     placeholder='Numero veiculo'
                     value={veiculo}
                     onChange={(e) => { setVeiculo(e.target.value) }} /> */}
-                <h2> Veículo: 12111 </h2>
-
+                <h2> Veículo: {veiculo} </h2>
                 <input
                     required
                     type="number"

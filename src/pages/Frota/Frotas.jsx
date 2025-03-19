@@ -22,6 +22,15 @@ export default function Frotas() {
         { "numVeiculo": 1301, "status": "concluido", empresa: "Vereda", tipoEquipamento: "Micro Onibus Mão na Roda" },
         { "numVeiculo": 1302, "status": "pendente", empresa: "Vereda", tipoEquipamento: "Micro Onibus Mão na Roda" }])
 
+
+
+    function escreverCatraca(numVeiculo) {
+        window.location.href = "/vistoriar/" + numVeiculo
+
+    }
+
+
+
     return (
         <>
             <h1>
@@ -29,10 +38,11 @@ export default function Frotas() {
             </h1>
 
             <div className="container-pesquisa">
-                <input type="text" placeholder="Pesquisar um veículo"/>
+                <input type="text" placeholder="Pesquisar um veículo" />
             </div>
 
             <div className="lista-veiculos">
+
                 {frotas.map((veiculo) => {
                     function verificarStatus(veiculoStatus) {
                         if (veiculoStatus == "pendente") {
@@ -45,7 +55,7 @@ export default function Frotas() {
                             </div>
                         }
                     }
-                    return <button>
+                    return <button onClick={() => { escreverCatraca(veiculo.numVeiculo) }}>
                         {verificarStatus(veiculo.status)}
                         veiculo: {veiculo.numVeiculo}
                         status: {veiculo.status}

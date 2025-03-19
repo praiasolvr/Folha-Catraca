@@ -6,15 +6,15 @@ export default function Menu() {
 
     return (
         <>
-            <form>
+            <form onSubmit={vistoria}>
                 <h1>
                     Menu
                 </h1>
                 <p>
                     usuario: Matheus
                 </p>
-                <input type="date" />
-                <button onClick={vistoria}>
+                <input required type="date" />
+                <button type="onSubmit">
                     comecar vistoria
                 </button>
             </form>
