@@ -5,21 +5,21 @@ import './Frota.css'
 export default function Frotas() {
     const [frotas, setFrotas] = useState([
         { "numVeiculo": 12001, "status": "pendente", empresa: "Praia Sol", tipoEquipamento: "Articulado" },
-        { "numVeiculo": 12002, "status": "concluido", empresa: "Praia Sol", tipoEquipamento: "Convencional" },
-        { "numVeiculo": 12003, "status": "concluido", empresa: "Praia Sol", tipoEquipamento: "Convencional" },
-        { "numVeiculo": 12004, "status": "concluido", empresa: "Praia Sol", tipoEquipamento: "Convencional" },
+        { "numVeiculo": 12002, "status": "pendente", empresa: "Praia Sol", tipoEquipamento: "Convencional" },
+        { "numVeiculo": 12003, "status": "pendente", empresa: "Praia Sol", tipoEquipamento: "Convencional" },
+        { "numVeiculo": 12004, "status": "pendente", empresa: "Praia Sol", tipoEquipamento: "Convencional" },
         { "numVeiculo": 12005, "status": "pendente", empresa: "Praia Sol", tipoEquipamento: "Convencional" },
-        { "numVeiculo": 12006, "status": "concluido", empresa: "Praia Sol", tipoEquipamento: "Convencional" },
-        { "numVeiculo": 12007, "status": "concluido", empresa: "Praia Sol", tipoEquipamento: "Convencional" },
-        { "numVeiculo": 12008, "status": "concluido", empresa: "Praia Sol", tipoEquipamento: "Convencional" },
+        { "numVeiculo": 12006, "status": "pendente", empresa: "Praia Sol", tipoEquipamento: "Convencional" },
+        { "numVeiculo": 12007, "status": "pendente", empresa: "Praia Sol", tipoEquipamento: "Convencional" },
+        { "numVeiculo": 12008, "status": "pendente", empresa: "Praia Sol", tipoEquipamento: "Convencional" },
         { "numVeiculo": 12009, "status": "pendente", empresa: "Praia Sol", tipoEquipamento: "Convencional Bike" },
         { "numVeiculo": 12010, "status": "pendente", empresa: "Praia Sol", tipoEquipamento: "Convencional Bike" },
         { "numVeiculo": 12011, "status": "pendente", empresa: "Praia Sol", tipoEquipamento: "Convencional Bike" },
         { "numVeiculo": 12012, "status": "pendente", empresa: "Praia Sol", tipoEquipamento: "Convencional Bike" },
-        { "numVeiculo": 12013, "status": "concluido", empresa: "Praia Sol", tipoEquipamento: "Micro Onibus" },
-        { "numVeiculo": 12014, "status": "concluido", empresa: "Praia Sol", tipoEquipamento: "Micro Onibus" },
-        { "numVeiculo": 12015, "status": "concluido", empresa: "Praia Sol", tipoEquipamento: "Micro Onibus" },
-        { "numVeiculo": 1301, "status": "concluido", empresa: "Vereda", tipoEquipamento: "Micro Onibus Mão na Roda" },
+        { "numVeiculo": 12013, "status": "pendente", empresa: "Praia Sol", tipoEquipamento: "Micro Onibus" },
+        { "numVeiculo": 12014, "status": "pendente", empresa: "Praia Sol", tipoEquipamento: "Micro Onibus" },
+        { "numVeiculo": 12015, "status": "pendente", empresa: "Praia Sol", tipoEquipamento: "Micro Onibus" },
+        { "numVeiculo": 1301, "status": "pendente", empresa: "Vereda", tipoEquipamento: "Micro Onibus Mão na Roda" },
         { "numVeiculo": 1302, "status": "pendente", empresa: "Vereda", tipoEquipamento: "Micro Onibus Mão na Roda" }])
 
 

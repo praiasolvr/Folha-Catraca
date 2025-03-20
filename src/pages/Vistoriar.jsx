@@ -1,4 +1,4 @@
-import { FaBus } from "react-icons/fa6";
+import { FaBus } from "react-icons/fa6"
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 
@@ -7,7 +7,7 @@ export default function Vistoriar() {
     const [veiculo, setVeiculo] = useState()
     const [catracaFisica, setCatracaFisica] = useState()
     const [catracaTacom, setCatracaTacom] = useState()
-    const { id } = useParams();
+    const { id } = useParams()
     const [data, setData] = useState()
     // TODO: CRIAR AS VARIAVEIS AQUI... 
     // =========MINHAS VARIAVEIS========= //
@@ -16,7 +16,8 @@ export default function Vistoriar() {
     // =========MINHAS FUNÇÕES========= //
     useEffect(() => {
         setVeiculo(id)
-    }, [])
+       setData(localStorage.getItem("dataOpercao"))        
+        }, [])
 
 
     function RegistrarCatraca(e) {

@@ -1,6 +1,11 @@
+import { useState } from "react"
+
 export default function Menu() {
+    const [data, setData] = useState("")
+
     function vistoria(e) {
         e.preventDefault()
+        localStorage.setItem("dataOpercao", data)
         window.location.href = "/frotas"
     }
 
@@ -13,7 +18,10 @@ export default function Menu() {
                 <p>
                     usuario: Matheus
                 </p>
-                <input required type="date" />
+                <input required type="date"
+                    value={data}
+                    onChange={(novaData) => { setData(novaData.target.value) }}
+                />
                 <button type="onSubmit">
                     comecar vistoria
                 </button>
