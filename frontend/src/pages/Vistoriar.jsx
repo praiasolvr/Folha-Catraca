@@ -16,8 +16,8 @@ export default function Vistoriar() {
     // =========MINHAS FUNÇÕES========= //
     useEffect(() => {
         setVeiculo(id)
-       setData(localStorage.getItem("dataOpercao"))        
-        }, [])
+        setData(localStorage.getItem("dataOpercao"))
+    }, [])
 
 
     function RegistrarCatraca(e) {
@@ -31,18 +31,6 @@ export default function Vistoriar() {
     // =========RETORNO DA PAGINA ========= //
     return (
         <div className='conteiner-folha-catraca'>
-            {/* <div className='controladores-veiculos'>
-
-                <button className='veiculos-vistoriados' onClick={() => { alert('ola') }}>
-                    <FaBus />
-                    Viculos vistoriados
-                </button>
-
-                <button className='veiculos-pensentes' onClick={() => { alert('ola') }}>
-                    <FaBus />
-                    Viculos pendentes
-                </button>
-            </div> */}
 
             <h1>Folha de catraca</h1>
             <div className="campoDate">
@@ -50,12 +38,7 @@ export default function Vistoriar() {
 
             </div>
             <form onSubmit={RegistrarCatraca}>
-                {/* <input
-                    required
-                    type="number"
-                    placeholder='Numero veiculo'
-                    value={veiculo}
-                    onChange={(e) => { setVeiculo(e.target.value) }} /> */}
+
                 <h2> Veículo: {veiculo} </h2>
                 <input
                     required
@@ -85,25 +68,11 @@ export default function Vistoriar() {
                     </div>
                 </div>
 
-                <div className='conteiner-eu-fechei'>
-                    <p><strong>* </strong>Foi eu que fechei?</p>
-                    <div className='conteiner-resp-eu-fechei'>
-                        <div>
-                            <input type="radio" id="SIM-fechei" name="fechei" value="SIM-fechei" required />
-                            <label for="SIM-fechei">SIM</label>
-                        </div>
-
-                        <div>
-                            <input type="radio" id="NAO-fechei" name="fechei" value="NAO-fechei" required />
-                            <label for="NAO-fechei">NÃO</label>
-                        </div>
-                    </div>
-                </div>
-
                 <button type='submit'>
                     Registrar
                 </button>
             </form>
-        </div>)
+        </div>
+    )
     // =========RETORNO DA PAGINA ========= //
 }
