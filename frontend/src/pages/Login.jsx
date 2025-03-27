@@ -10,7 +10,7 @@ export default function Login() {
         e.preventDefault()
         const usuarioBd = "matheus"
         const senhaBd = "123456"
-        if (usuarioBd == usuario) {
+        if (usuarioBd == usuario && senhaBd == senha) {
             window.location.href = "/menu"
         } else {
             alert("usuario ou senha incorreta!")

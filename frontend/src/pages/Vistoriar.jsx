@@ -7,6 +7,7 @@ export default function Vistoriar() {
     const [veiculo, setVeiculo] = useState()
     const [catracaFisica, setCatracaFisica] = useState()
     const [catracaTacom, setCatracaTacom] = useState()
+    const [isClose, setIsClose] = useState()
     const { id } = useParams()
     const [data, setData] = useState()
     // TODO: CRIAR AS VARIAVEIS AQUI... 
@@ -22,7 +23,7 @@ export default function Vistoriar() {
 
     function RegistrarCatraca(e) {
         e.preventDefault()
-        alert("pg")
+        alert("valor de isClose é " + isClose)
     }
     // TODO: DESENVOLVER AS FUNÇÕES AQUI...
     // =========MINHAS FUNÇÕES========= //
@@ -58,11 +59,25 @@ export default function Vistoriar() {
                     <p><strong>* </strong>Viagem fechada?</p>
                     <div className='conteiner-resp-viagem-fechada'>
                         <div>
-                            <input type="radio" id="SIM-fechada" name="fechada" value="SIM-fechada" required />
+                            <input
+                                required
+                                type="radio"
+                                id="SIM-fechada"
+                                name="fechada"
+                                value={isClose}
+                                onChange={(e) => { setIsClose(true) }}
+                            />
                             <label for="SIM-fechada">SIM</label>
                         </div>
                         <div>
-                            <input type="radio" id="NAO-fechada" name="fechada" value="NAO-fechada" required />
+                            <input
+                                required
+                                type="radio"
+                                id="NAO-fechada"
+                                name="fechada"
+                                value={isClose}
+                                onChange={(e) => { setIsClose(false) }}
+                            />
                             <label for="NAO-fechada">NÃO</label>
                         </div>
                     </div>
