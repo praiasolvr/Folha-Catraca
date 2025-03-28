@@ -3,21 +3,23 @@ package com.example.Folha.Catraca;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
+import java.time.LocalDate;
+
 @Entity
 public class VistoriarEntity {
     @Id
     private Long id;
 
+    private LocalDate data;  // Alterando para LocalDate
     private Long catracaFisica;
     private Long catracaEletronica;
     private Boolean isClose;
 
-    public VistoriarEntity() {
+    public VistoriarEntity() {}
 
-    }
-
-    public VistoriarEntity(Long id, Long catracaFisica, Long catracaEletronica, Boolean isClose) {
+    public VistoriarEntity(Long id, LocalDate data, Long catracaFisica, Long catracaEletronica, Boolean isClose) {
         this.id = id;
+        this.data = data;
         this.catracaFisica = catracaFisica;
         this.catracaEletronica = catracaEletronica;
         this.isClose = isClose;
@@ -29,6 +31,14 @@ public class VistoriarEntity {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public LocalDate getData() {
+        return data;
+    }
+
+    public void setData(LocalDate data) {
+        this.data = data;
     }
 
     public Long getCatracaFisica() {
@@ -47,17 +57,23 @@ public class VistoriarEntity {
         this.catracaEletronica = catracaEletronica;
     }
 
-    public Boolean getClose() {
+    public Boolean getIsClose() {
         return isClose;
     }
 
-    public void setClose(Boolean close) {
-        isClose = close;
+    public void setIsClose(Boolean isClose) {
+        this.isClose = isClose;
     }
 
     @Override
     public String toString() {
-        return super.toString();
+        return "VistoriarEntity{" +
+                "id=" + id +
+                ", data=" + data +
+                ", catracaFisica=" + catracaFisica +
+                ", catracaEletronica=" + catracaEletronica +
+                ", isClose=" + isClose +
+                '}';
     }
 
     @Override
